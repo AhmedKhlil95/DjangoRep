@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    
+    {% for contact in contacts   %}
+    
+     <div>
+        <h2>{{contact.name}}</h2>
+        <p>{{contact.email}}</p>
+        <p>{{contact.message}}</p>
+    </div>
+    {% endfor %}
+    
+</div>
+{% endblock content %}
