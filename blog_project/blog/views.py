@@ -4,6 +4,10 @@ from django.views.generic.edit import CreateView,UpdateView,DeleteView
 from .forms import ContactForm
 from blog.models import Post , ContactMessage
 from django.urls import reverse_lazy 
+from django import forms
+
+
+
 
 def index(request):
     return render(request,index.html)
